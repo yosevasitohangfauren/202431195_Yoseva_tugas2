@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontak — Nama Anda</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Yoseva Faurensia Sitohang</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle3">☰</button>
+      <nav class="nav" id="mainNav3">
+        <a href="index.html">Beranda</a>
+        <a href="portfolio.html">Portofolio</a>
+        <a href="contact.html" class="active">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>Form Request Project</h1>
+      <p>Isi form berikut jika ingin memesan jasa pembuatan website atau konsultasi.</p>
+    </section>
+
+    <section class="form-section">
+      <form id="projectForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Nama *</label>
+          <input id="name" name="name" type="text" required placeholder="Nama lengkap" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required placeholder="email@contoh.com" />
+        </div>
+
+        <div class="form-row">
+          <label for="service">Jenis Layanan *</label>
+          <select id="service" name="service" required>
+            <option value="">-- Pilih Layanan --</option>
+            <option value="website">Pembuatan Website</option>
+            <option value="landing">Landing Page</option>
+            <option value="konsultasi">Konsultasi Teknologi</option>
+            <option value="other">Lainnya</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="details">Deskripsi Proyek / Pesan *</label>
+          <textarea id="details" name="details" rows="6" required placeholder="Ceritakan kebutuhan Anda..."></textarea>
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Preferensi Kontak</legend>
+          <label><input type="radio" name="pref" value="email" checked /> Email</label>
+          <label><input type="radio" name="pref" value="wa" /> WhatsApp</label>
+          <label><input type="radio" name="pref" value="telepon" /> Telepon</label>
+        </fieldset>
+
+        <div class="form-row checkbox-row">
+          <label><input id="tos" name="tos" type="checkbox" required /> Saya setuju dihubungi dan data saya diproses untuk keperluan proyek.</label>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn primary">Kirim Request</button>
+        </div>
+
+        <div id="formMessage" aria-live="polite" class="form-message"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year3"></span> Yoseva Faurensia Siotang -<a href="https://itpln.ac.id" target="_blank" rel="noopener">ITPLN</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
